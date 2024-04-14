@@ -1,0 +1,2 @@
+question: check for outdated Python packages
+answer: pip list --outdated

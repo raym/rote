@@ -1,0 +1,2 @@
+question: create a Python requirements file
+answer: pip freeze > requirements.txt

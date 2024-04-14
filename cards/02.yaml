@@ -1,0 +1,4 @@
+question: How do you rename a branch?
+answer: |-
+  git branch -m <newname>
+  git branch -m <oldname> <newname>

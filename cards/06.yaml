@@ -1,0 +1,2 @@
+question: activate your Python virtual environment
+answer: source venv/bin/activate
