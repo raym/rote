@@ -1,2 +1,6 @@
 def key_is_escape(key):
-    return ord(key) == 27
+    try:
+        is_escape = ord(key) == 27
+    except:
+        return False
+    return is_escape

@@ -7,7 +7,7 @@ def render_screen(stdscr, question, answer, guess):
     stdscr.addstr(question)
     start_answer_on_line = calculate_linecount(question) + 1
     for i, char in enumerate(guess):
-        correct_char = answer[i]
+        correct_char = answer[i] if i < len(answer) else None
         color = curses.color_pair(SUCCESS_TEXT) if char == correct_char else curses.color_pair(ERROR_TEXT)
         stdscr.addstr(start_answer_on_line, i, char, color)
     stdscr.refresh()
@@ -27,7 +27,7 @@ def test_user(stdscr, card):
             break
         if key_is_backspace(key):
             guess = guess[:-1]
-        else:
+        elif len(guess + key) <= len(answer):
             guess += key
         if guess == answer:
             render_screen(stdscr, question, answer, guess)
