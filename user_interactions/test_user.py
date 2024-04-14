@@ -17,7 +17,6 @@ def test_user(stdscr, card):
     answer = card['answer']
     guess = ''
 
-    stdscr.timeout(100)
     while True:
         render_screen(stdscr, question, answer, guess)
         try:
@@ -33,4 +32,3 @@ def test_user(stdscr, card):
         if guess == answer:
             render_screen(stdscr, question, answer, guess)
             break
-    stdscr.timeout(-1)

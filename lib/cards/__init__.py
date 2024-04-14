@@ -1,2 +1,2 @@
-from .load_cards import load_cards
-from .shuffle_cards import shuffle_cards
+from .load_deck import load_deck
+from .shuffle_deck import shuffle_deck
