@@ -21,3 +21,42 @@ python rote.py
 deactivate
 <Ctrl+D>
 ```
+
+There are a few sample flashcard decks in this repository, for now:
+- `./decks/git`
+- `./decks/python-cli`
+- `./decks/python-language`
+
+However, I believe it's more helpful for each individual to create and curate their own decks. So I'll probably end up adding the `decks` directory to `.gitignore`.
+
+You can specify a deck at the terminal. If left unspecified, it will default to `./decks/git`.
+
+```
+python rote.py ./decks/python-cli
+```
+
+To add your own flashcard decks, create a directory with one or more `.yaml` files in them, where the YAML is a top-level array of objects with keys `front` and `back`, like so:
+
+```yaml
+# ./decks/example/fox.yaml
+-
+  front: what is the only thing with which one can see rightly?
+  back: the heart
+-
+  front: what is invisible to the eye?
+  back: the essential
+```
+```yaml
+# ./decks/example/md5-cli.yaml
+-
+  front: get the md5 hash of the string "wonder" using the here-string operator
+  back: md5sum <<< "wonder"
+```
+
+Then specify the deck directory and all flashcards found in all `.yaml` files will be shuffled and, one by one, presented at the terminal:
+
+```
+python rote.py ./decks/example/
+```
+
+To continue, the user must type the value of the flashcard's `back` verbatim.
