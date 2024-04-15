@@ -27,7 +27,7 @@ There are a few sample flashcard decks in this repository, for now:
 - `./decks/python-cli`
 - `./decks/python-language`
 
-However, I believe it's more helpful for each individual to create and curate their own decks. So I'll probably end up adding the `decks` directory to `.gitignore`.
+However, I believe it's more helpful for each individual to create and curate their own decks. I plan to curate the sample decks some more and then add the `decks` directory to `.gitignore`. Until then, `my_decks` is present in `.gitignore`, so that is available for each individual's decks.
 
 You can specify a deck at the terminal. If left unspecified, it will default to `./decks/git`.
 
