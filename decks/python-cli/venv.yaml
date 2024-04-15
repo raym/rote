@@ -1,0 +1,9 @@
+-
+  back: python3 -m venv venv
+  front: create a Python virtual environment
+-
+  front: activate Python virtual environment
+  back: source venv/bin/activate
+-
+  front: deactivate Python virtual environment
+  back: deactivate

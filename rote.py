@@ -1,4 +1,5 @@
 import curses
+import sys
 from constants import ERROR_TEXT, NOMINAL_TEXT, SUCCESS_TEXT
 from curses import wrapper
 from lib import calculate_linecount, key_is_backspace, key_is_escape
@@ -10,7 +11,8 @@ def main(stdscr):
     curses.init_pair(SUCCESS_TEXT, curses.COLOR_GREEN, curses.COLOR_BLACK)
     curses.init_pair(ERROR_TEXT, curses.COLOR_BLACK, curses.COLOR_RED)
 
-    deck = shuffle_deck(load_deck('./cards'))
+    deck_dir = sys.argv[1] if len(sys.argv[1:]) == 1 else './decks/git/'
+    deck = shuffle_deck(load_deck(deck_dir))
 
     welcome_user(stdscr)
 

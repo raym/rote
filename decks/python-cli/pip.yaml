@@ -1,0 +1,24 @@
+-
+  front: check pip version used by Python version 3.11
+  back: python3.11 -m pip --version
+-
+  front: upgrade pip used by Python version 3.9
+  back: python3.9 -m pip install --upgrade pip
+-
+  front: list Python packages installed
+  back: pip list
+-
+  front: install a package using Python 3.9
+  back: python3.9 -m pip install <package-name>
+-
+  front: check for outdated Python packages
+  back: pip list --outdated
+-
+  front: upgrade a Python package
+  back: pip install <package-name> --upgrade
+-
+  front: create a Python requirements file
+  back: pip freeze > requirements.txt
+-
+  front: install Python requirements
+  back: pip install -r requirements.txt

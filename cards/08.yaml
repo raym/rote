@@ -1,2 +1,0 @@
-question: list packages installed in your Python virtual environment
-answer: pip list

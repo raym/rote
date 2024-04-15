@@ -1,0 +1,7 @@
+-
+  front: |-
+    Define a new variable `color` that
+      - equals the string "green" if the variable `value` is a positive integer
+      - and otherwise equals the string "red"
+  back: |-
+    color = "green" if value > 0 else "red"

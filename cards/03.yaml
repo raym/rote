@@ -1,2 +1,0 @@
-question: check pip version used by Python version 3.9
-answer: python3.9 -m pip --version

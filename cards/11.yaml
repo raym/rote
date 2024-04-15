@@ -1,2 +1,0 @@
-question: upgrade a Python package
-answer: pip install <package-name> --upgrade

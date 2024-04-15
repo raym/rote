@@ -1,0 +1,5 @@
+- 
+  front: How do you rename a branch?
+  back: |-
+    git branch -m <newname>
+    git branch -m <oldname> <newname>

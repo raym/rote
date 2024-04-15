@@ -1,2 +1,0 @@
-question: install Python requirements
-answer: pip install -r requirements.txt
