@@ -11,8 +11,8 @@ def main(stdscr):
     curses.init_pair(SUCCESS_TEXT, curses.COLOR_GREEN, curses.COLOR_BLACK)
     curses.init_pair(ERROR_TEXT, curses.COLOR_BLACK, curses.COLOR_RED)
 
-    deck_dir = sys.argv[1] if len(sys.argv[1:]) == 1 else './decks/git/'
-    deck = shuffle_deck(load_deck(deck_dir))
+    deck_path = sys.argv[1] if len(sys.argv[1:]) == 1 else './decks/git/'
+    deck = shuffle_deck(load_deck(deck_path))
 
     welcome_user(stdscr)
 
